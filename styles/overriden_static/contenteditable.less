@@ -1,0 +1,22 @@
+@import "ui-variables";
+
+//static/components/contenteditable.less
+.contenteditable-container {
+	.floating-toolbar {
+		background: @overlay-background-color;
+
+		.toolbar-pointer {
+			background: transparent url("nylas://ui-predawn/styles/images/tooltip/tooltip-bg-pointer-dark@2x.png") no-repeat;
+			background-size: 22.5px 9.5px;
+		}
+
+		button.btn.toolbar-btn {
+			&:hover {
+				&.btn-bold { background-image: url("nylas://ui-predawn/styles/images/composer/tooltip-bold-orange@2x.png") }
+	        	&.btn-italic { background-image: url("nylas://ui-predawn/styles/images/composer/tooltip-italic-orange@2x.png") }
+	        	&.btn-underline { background-image: url("nylas://ui-predawn/styles/images/composer/tooltip-underline-orange@2x.png") }
+		        &.btn-link { background-image: url("nylas://ui-predawn/styles/images/composer/tooltip-link-orange@2x.png") }
+			}
+		}	
+	}
+}

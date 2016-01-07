@@ -1,0 +1,36 @@
+@import "ui-variables";
+
+//static/components/extra.less
+//MailLabel is a React.Component that sets much of the color in a LabelColorizer class. !important 
+//seems to be the only way to override programmatic style changes coming from the javascript.
+.mail-label {
+	border: none !important;
+	color: @text-color-inverse !important;
+	background-color: @orange !important;
+	background-image: none !important;
+	box-shadow: none !important;
+
+	.x {
+		background-color: @text-color-inverse !important;
+	}
+}
+
+.mail-important-icon {
+	background-image: url("nylas://N1-Predawn/styles/images/important/Icon-Important-Hover@2x.png");
+}
+
+.mail-important-icon.active {
+	background-image: url("nylas://N1-Predawn/styles/images/important/Icon-Important-Active@2x.png");
+}
+
+.mail-important-icon:hover {
+	background-image: url("nylas://N1-Predawn/styles/images/important/Icon-Important-HoverActive@2x.png");
+}
+
+.mail-important-icon.active:hover {
+	background-image: url("nylas://N1-Predawn/styles/images/important/Icon-Important-Active@2x.png");
+}
+
+.draft-icon {
+  content: url("nylas://N1-Predawn/styles/images/thread-list/icon-draft-pencil@2x.png");
+}

@@ -1,0 +1,25 @@
+@import "ui-variables";
+
+//workspace.less
+.btn-feedback {
+  background: @orange;
+  border: none;
+  box-shadow: none;
+}
+
+.btn-feedback:hover {
+  background: lighten(@orange, 5%);
+  box-shadow: none;
+}
+.btn-feedback:active {
+  background: darken(@orange, 20%);
+  box-shadow: none;
+}
+
+body.platform-win32 {
+	.btn-feedback {
+		background: @orange;
+		&:hover { background: lighten(@orange, 5%); }
+		&:active { background: lighten(@orange, 20%); }
+	}
+}

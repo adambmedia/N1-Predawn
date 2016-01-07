@@ -1,0 +1,144 @@
+@gray-base:    	#1f1f1f;
+@orange: 		#f18260;
+
+@gray-darker:  	darken(@gray-base, 30%);
+@gray-dark:    	darken(@gray-base, 10%);
+@gray:         	@gray-base;
+@gray-light:   	lighten(@gray-base, 10%);
+@gray-lighter: 	lighten(@gray-base, 30%);
+@white:   		#f8f7f9;     
+
+@base-background-color:  #282828;
+@background-primary:     @base-background-color;
+@background-off-primary: #282828;
+@background-secondary:   @gray-base;
+@background-tertiary:    green;
+
+@accent-primary:            @orange;
+@accent-primary-dark:       @accent-primary;
+
+@text-color:                      rgba(255, 255, 255, 0.8);
+@text-color-subtle:               rgba(255, 255, 255, 0.5);
+@text-color-very-subtle:          fadeout(@text-color-subtle, 10%);
+@text-color-inverse:              @white;
+@text-color-heading:              @text-color;
+
+//No borders.
+@base-border-color:   	transparent;
+@border-primary-bg:     @base-border-color;
+@border-secondary-bg:   @base-border-color;
+@border-tertiary-bg:    @base-border-color;
+@border-color-divider:  @base-border-color;
+
+@border-color:			transparent;
+@border-color-subtle:	transparent;
+
+//Text-field input, such as 'search all email'.
+@input-bg:              @base-background-color;
+@input-border:          @base-border-color;
+
+@toolbar-background-color: @base-background-color;
+
+//States
+@info-color: #5293d8;
+@success-color: #26c26a;
+@warning-color: #ff982d;
+@error-color: #c00;
+@danger-color: #c00;
+
+@background-color-highlight: transparent;
+
+//Type
+@text-color-link: @accent-primary;
+@text-color-link-hover: @text-color;
+@text-color-link-active: @text-color-link-hover;
+
+@unread-color: purple;
+@action-color: purple;
+
+@text-color-info: @info-color;
+@text-color-success: @success-color;
+@text-color-warning: @warning-color;
+@text-color-error: @error-color;
+@text-color-destructive: @danger-color;
+
+@text-color-highlight: #f18260;
+@text-color-selected: @text-color-highlight;
+
+//Buttons
+@btn-shadow: @standard-shadow;
+
+@btn-default-bg-color:    @base-background-color;
+@btn-default-text-color:  @text-color;
+
+@btn-action-bg-color:     @success-color;
+@btn-action-text-color:   @text-color;
+
+@btn-emphasis-bg-color:   @accent-primary;
+@btn-emphasis-text-color: @text-color-inverse;
+
+@btn-danger-bg-color:     @danger-color;
+@btn-danger-text-color:   @text-color-inverse;
+
+.btn {
+	&.btn-emphasis {
+		color: @text-color-inverse;
+		background: @accent-primary;
+	}
+}
+
+//Dropdowns
+@overlay-background-color: #414141;
+@overlay-border-color: @base-border-color;
+@component-border-radius: 0;
+
+//Nylas
+@dropdown-default-bg-color:     @overlay-background-color;
+@dropdown-default-text-color:   @text-color;
+@dropdown-default-border-color: @base-border-color;
+
+//Lists
+//** Background color on `.list-group-item`
+@list-bg:               @base-background-color;
+//** `.list-item` border color
+@list-border:			@background-secondary;
+//** Background color of single list items on hover
+@list-hover-bg: 		#f12345;
+//** Text color of active list items
+@list-focused-color: 	@accent-primary;
+//** Background color of active list items
+@list-focused-bg: 		@background-secondary;
+//** Border color of active list elements
+@list-focused-border: 	@base-border-color;
+//** Text color for content within active list items
+@list-focused-color-muted:  @text-color-subtle;
+
+//** List group border radius
+@list-selected-color:   @accent-primary;
+//** Background color of active list item
+@list-selected-bg:          @background-secondary;
+//** Border color of active list elements
+@list-selected-border:      @base-border-color;
+//** Text color for content within active list items
+@list-selected-color-muted: blue;
+
+//** Text color of disabled list items
+@list-disabled-color:      #f12345;
+//** Background color of disabled list items
+@list-disabled-bg:         #f12345;
+//** Text color for content within disabled list items
+@list-disabled-text-color: @list-disabled-color;
+
+//Panels and Sidebars
+@panel-background-color: @background-secondary;
+@toolbar-background-color: @background-secondary;
+
+//Public
+@progress-bar-fill: @accent-primary;
+@progress-bar-background: @background-secondary;
+
+@background-color-info: 	@info-color	;
+@background-color-success: 	@success-color;
+@background-color-warning: 	@warning-color;
+@background-color-error: 	@error-color;
+@background-color-pending: 	@text-color-subtle;

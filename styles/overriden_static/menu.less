@@ -1,0 +1,40 @@
+@import "ui-variables";
+
+//static/components/menu.less
+.menu {
+	.header-container {
+		input.search {
+			background-color: @background-secondary;
+			color: @text-color;
+		}
+	}
+
+	.item:hover {
+		text-decoration: none;
+		background-color: @base-background-color;
+		color:	@accent-primary;
+	}
+
+	.item.selected, .item:active  {
+		text-decoration: none;
+		background-color: @background-secondary;
+		color: @text-color; 
+		.primary {
+			color: @text-color;
+		}
+		.secondary {
+			color: @text-color-subtle;
+		}
+	}
+
+	.item.selected:hover {
+		text-decoration: none;
+		color: @accent-primary;
+	}
+
+	.item:not(.active):not(.selected):hover {
+    	text-decoration: none;
+    	background-color: @base-background-color;
+    	color: @accent-primary;
+  }
+}
