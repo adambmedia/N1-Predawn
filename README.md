@@ -3,7 +3,7 @@
 
 ### Extensively based on the excellent Sublime/Atom dark-ui theme [Predawn](https://github.com/jamiewilson/predawn) by [Jamie Wilson](https://github.com/jamiewilson).
 
-![Screenshot](N1-PredawnScreen.png?raw=true)
+![Screenshot](./N1-Predawn-Screen.png?raw=true)
 
 # Installing
 1. Download the [Nylas N1](https://www.nylas.com/n1) email client.
