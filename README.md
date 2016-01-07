@@ -3,14 +3,13 @@
 
 ### Extensively based on the excellent Sublime/Atom dark-ui theme [Predawn](https://github.com/jamiewilson/predawn) by [Jamie Wilson](https://github.com/jamiewilson).
 
-![Screenshot](./N1-Predawn-Screen.png?raw=true)
+![Screenshot](N1-PredawnScreen.png?raw=true)
 
 # Installing
 1. Download the [Nylas N1](https://www.nylas.com/n1) email client.
-2. Grab the latest release of N1-Predawn
+2. [Grab](https://github.com/adambmedia/N1-Predawn/releases) the latest release of N1-Predawn
 3. Open `N1>Preferences>General>Select theme` and select `Install new theme...` from the dropdown.
-  * You want to install the theme from the package (first option) and not the source (second and third options). As of this release, N1 looks at the folder name to set up the directory. Github's `source-code` links add the version number to the folder name and will break the absolute icon paths in the theme.
-
+  * You want to install the theme from the package (first option) and not the source (second and third options). As of this release, N1 looks at the folder name to set up the directory. Github's `source-code` links add the version number to the folder name and will break the absolute icon references.
 4. Impress your friends with your snazzy dark-ui email client.
 
 # Folder Hierarchy
