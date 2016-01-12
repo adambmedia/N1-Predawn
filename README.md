@@ -23,3 +23,4 @@ This theme overrides classes found in N1's `internal_packages` directory, `stati
 5. figure out something more elegant for mulit-select in thread-list
 6. messed up scrollbar in email composition templates popup
 7. horizontal scrollbars
+8. fix Cut-and-paste which grabs html and therefore gets pasted in white-ui applications as a gray-color background with white text.
