@@ -5,17 +5,11 @@
 	.list-item {
 		background-color: @background-primary;
 	}
-	.list-column {
-   		border-bottom: 1px solid @background-secondary;
-  	}
 
 	.unread:not(.focused):not(.selected) {
 		&:hover {
 			background: @background-secondary;
 		}
-		.list-column {
-    		border-bottom: 1px solid @background-secondary;
-  		}
 	}
 
 	.thread-icon {
@@ -30,7 +24,7 @@
 		&.thread-icon-replied {
       		background-image: url("nylas://N1-Predawn/styles/images/thread-list/icon-replied-@2x.png");
     	}
-    	
+
     	&.thread-icon-forwarded {
       		background-image:url("nylas://N1-Predawn/styles/images/thread-list/icon-forwarded-@2x.png");
     	}
@@ -44,4 +38,12 @@
 .thread-list .thread-icon-star:hover
 {
 	background-image: url("nylas://N1-Predawn/styles/images/thread-list/icon-star-@2x.png");
+}
+
+.list-tabular {
+	.list-tabular-item {
+		&.keyboard-cursor {
+			border-left-color: @accent-primary;
+		}
+	}
 }
